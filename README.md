@@ -17,7 +17,16 @@ The project is part of an interdisciplinary project between the informatics depa
 
 ## Data and file overview
 - Jupyter notebooks numbered according to the order of execution
+- requirements.txt containing all required libraries, using command:
+  
+  `pip install -r requirements.txt`
+- the datasets are NOT included for data protection reasons, add the two folders twitter_data and instagram_data to the repo
 
 ## Running instructions
+  
+Here is an overview of the code pipeline and the respective data. For each Jupyter notebook (row in the middle), certain data files are used as input and certain ones are generated as output. This way, the notebooks can be run independently of each other.
+ 
+![Data and Code Overview](https://github.com/thea-kramer/greenwashing-detection/blob/master/Overview_Code_Data.png?raw=true "Data and Code Overview")
+
 
 
