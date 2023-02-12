@@ -16,14 +16,28 @@ The project is part of an interdisciplinary project between the informatics depa
 **Data sources:** Twitter API (research access) and Instagram API (Crowdtangle)
 
 ## Data and file overview
-- Jupyter notebooks numbered according to the order of execution
-- requirements.txt containing all required libraries, using command:
+1. Jupyter notebooks numbered according to the order of execution. From "0_..." to "2_...", the data processing is shown, however they do not need to be rerun. "3_..." to "8_..." are for analysis and should be rerun, as they are interactive.
+- `0_InstagramDataRetrieval.ipynb` and `0_TwitterDataRetrieval.ipynb`: Retrieving of the raw data
+- `1_InstagramDataProcessing.ipynb` and `1_TwitterDataProcessing.ipynb`: Restructuring the Instagram/Twitter data, unpacking nested data
+- `2_SustainabilityCalculation.ipynb`: calculating and adding sustainability labels for the data
+- `3_Analysing.ipynb`: basic analytics like how many posts over time etc.
+- `4_AnalysingStatistics.ipynb`: more progressed analytics like correlations and regression
+- `5_Predicting.ipynb`: Machine Learning models for predicting the sustainability label or whether a sustainable post has general claims
+- `6_SimilarityAnalyser.ipynb`: Similarity analyser of word vectors of the different datasets
+- `7_TopicModels.ipynb`: Topic Model Generator for each dataset
+- `8_WordDistributions.ipynb`: Word Cloud Generator
+
+2. requirements.txt containing all required libraries, using command: `pip install -r requirements.txt`
   
-  `pip install -r requirements.txt`
-- the datasets are NOT included for data protection reasons, add the two folders twitter_data and instagram_data to the repo
+3. the datasets are NOT included for data protection reasons, add the two folders twitter_data and instagram_data to the repo
 
 ## Data files
 For data protection, the 2 folders twitter_data and instagram_data with the necessary csv files to run the notebooks are not included. Request them by writing me an email, then you can paste twitter_data and instagram_data folders to the main directory where the notebooks are in.
+
+Important data files:
+Per folder twitter_data and instagram_data, you will find multiple csv files. Most important are the following 2:
+- `posts_processed.csv`: For each folder respectively, it shows the complete dataset as explained in the codebook
+- `green_posts_processed.csv` The same as `posts_processed.csv`, but filtered to only contain posts about sustainability
 
 ## Running instructions
   
